@@ -1,12 +1,9 @@
-package pm.av2revisoes
+package pm.astraeus
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isEmpty
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import pm.astraeus.ExploreFragment
-import pm.astraeus.GlossaryFragment
-import pm.astraeus.R
 import pm.astraeus.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
