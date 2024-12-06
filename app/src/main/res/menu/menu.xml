@@ -10,4 +10,8 @@
         android:id="@+id/navGlossary"
         android:icon="?attr/actionModeCopyDrawable"
         android:title="@string/nav_glossary" />
+    <item
+        android:id="@+id/navUser"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="@string/nav_user" />
 </menu>

@@ -23,10 +23,6 @@ class GlossaryFragment : Fragment() {
         val root: ViewGroup = view.findViewById(R.id.glossaryInclude)
         val inflater = LayoutInflater.from(requireContext())
         val tabs: TabLayout = view.findViewById(R.id.tabGlossary)
-
-        tabs.addTab(tabs.newTab().setText("Tab 1"))
-        tabs.addTab(tabs.newTab().setText("Tab 2"))
-        tabs.addTab(tabs.newTab().setText("Tab 3"))
         tabs.tabGravity = TabLayout.GRAVITY_FILL
 
         tabs.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {

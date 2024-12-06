@@ -38,6 +38,12 @@ class MainActivity : AppCompatActivity() {
                         .add(R.id.placeholder, GlossaryFragment())
                         .commit()
                 }
+                R.id.navUser -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .add(R.id.placeholder, UserFragment())
+                        .commit()
+                }
             }
             return@setOnItemSelectedListener true
         }
