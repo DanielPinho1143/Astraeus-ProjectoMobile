@@ -1,6 +1,8 @@
 package pm.astraeus
 
+import android.content.Context
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isEmpty
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -56,4 +58,5 @@ class MainActivity : AppCompatActivity() {
             binding.bottomNavigation.selectedItemId = R.id.navExplore
         }
     }
+
 }

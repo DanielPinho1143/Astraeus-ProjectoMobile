@@ -48,6 +48,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Externas
     implementation(libs.volley)
     implementation(libs.picasso)
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
 }
