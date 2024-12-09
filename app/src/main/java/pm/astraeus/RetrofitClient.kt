@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
 
-    private const val BASE_URL = "https://esan-tesp-ds-paw.web.ua.pt/tesp-ds-g23/aulas/08/api/"
+    private const val BASE_URL = "https://esan-tesp-ds-paw.web.ua.pt/tesp-ds-g23/projecto/web/api/"
 
     // Create and configure Retrofit
     private val retrofit = Retrofit.Builder()

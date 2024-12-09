@@ -12,6 +12,6 @@ data class LoginResponse(val message: String, val jwt: String?)
 interface UserApi {
 
     @Headers("Content-Type: application/json")
-    @POST("users/login.php") // Endpoint path
+    @POST("utilizador/login.php") // Endpoint path
     fun login(@Body request: LoginRequest): Call<LoginResponse>
 }
