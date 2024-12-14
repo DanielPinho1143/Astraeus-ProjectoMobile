@@ -19,7 +19,7 @@ class UserFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_user, container, false)
 
-        // Set the onClickListener programmatically
+        // botão logout
         val logoutButton: Button = view.findViewById(R.id.btnLogout)
         logoutButton.setOnClickListener { doLogout() }
 
@@ -27,7 +27,7 @@ class UserFragment : Fragment() {
     }
 
     private fun doLogout() {
-        // Clear the shared preferences for logout
+        // limpa shared preferences
         requireActivity().getSharedPreferences("pmLogin", Context.MODE_PRIVATE)
             .edit()
             .putBoolean("login", false)
@@ -35,15 +35,14 @@ class UserFragment : Fragment() {
             .putString("jwt", "")
             .apply()
 
-        // Show a Toast message
         Toast.makeText(requireContext(), "Logout feito", Toast.LENGTH_SHORT).show()
 
 
-        // Start MainActivity
+        // inicia atividade login
         val intent = Intent(requireActivity(), LoginActivity::class.java)
         startActivity(intent)
 
-        // Finish the current Activity (this will pop the fragment and go back to the main activity)
+        // finaliza a atividade main e sai do fragmento
         requireActivity().finish()
     }
 }

@@ -5,15 +5,15 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
 
-    private const val BASE_URL = "https://esan-tesp-ds-paw.web.ua.pt/tesp-ds-g23/aulas/08/api/"
+    private const val BASE_URL = "https://esan-tesp-ds-paw.web.ua.pt/tesp-ds-g23/projecto/web/api/"
 
-    // Create and configure Retrofit
+    // Criação e configuração de Retrofit
     private val retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)
-        .addConverterFactory(GsonConverterFactory.create()) // Add Gson for JSON conversion
+        .addConverterFactory(GsonConverterFactory.create()) // Gson para conversão JSON
         .build()
 
-    // Function to create an API service
+    // Função para criar um serviço de API
     fun <T> createService(apiClass: Class<T>): T {
         return retrofit.create(apiClass)
     }
