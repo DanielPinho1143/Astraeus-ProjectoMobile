@@ -63,10 +63,10 @@ class LoginActivity : AppCompatActivity() {
                         startActivity(Intent(this@LoginActivity, MainActivity::class.java))
                         finish()
                     } else {
-                        Toast.makeText(this@LoginActivity, "Login failed: ${loginResponse.message}", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@LoginActivity, "Login failed (1): ${loginResponse.message}", Toast.LENGTH_SHORT).show()
                     }
                 } else {
-                    Toast.makeText(this@LoginActivity, "Login failed: ${response.message()}", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@LoginActivity, "Login failed (2): ${response.message()}", Toast.LENGTH_SHORT).show()
                 }
             }
 
