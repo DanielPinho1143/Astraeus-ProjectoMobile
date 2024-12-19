@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="background_light">#e5d6c0</color>
+
+    <color name="primary_light">#ffffff</color>
+
+    <color name="main_light">#2093e5</color>
 </resources>

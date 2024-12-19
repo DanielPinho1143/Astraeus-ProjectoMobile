@@ -2,6 +2,8 @@ package pm.astraeus
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.text.Html
+import android.text.Html.fromHtml
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -61,7 +63,7 @@ class TipoCorpoFragment : Fragment() {
             jsonRequest,
             { response ->
                 try {
-                    val tipos_corpo = parseTiposCorpo(response.toString())
+                    val tipos_corpo = parseTiposCorpo(fromHtml(response.toString() ).toString())
 
                     // atualização de dados
                     tiposCorpoList.clear()

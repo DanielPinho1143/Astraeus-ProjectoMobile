@@ -4,14 +4,14 @@
 
     <item
         android:id="@+id/navExplore"
-        android:icon="?attr/actionModeSelectAllDrawable"
+        android:icon="@drawable/earth_box"
         android:title="@string/nav_explore" />
     <item
         android:id="@+id/navGlossary"
-        android:icon="?attr/actionModeCopyDrawable"
+        android:icon="@drawable/clipboard_text_outline"
         android:title="@string/nav_glossary" />
     <item
         android:id="@+id/navUser"
-        android:icon="@android:drawable/ic_dialog_info"
+        android:icon="@drawable/account_box"
         android:title="@string/nav_user" />
 </menu>

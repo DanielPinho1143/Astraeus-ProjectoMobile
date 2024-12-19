@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_explore">Explorar</string>
+    <string name="nav_glossary">Glossário</string>
+    <string name="hello_blank_fragment">Olá fragmento em branco</string>
+    <string name="nav_user">Utilizador</string>
+    <string name="login">Entrar</string>
+    <string name="save">Guardar</string>
+    <string name="logout">Sair</string>
+</resources>

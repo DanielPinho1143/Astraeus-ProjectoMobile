@@ -2,6 +2,7 @@ package pm.astraeus
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.text.Html.fromHtml
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -61,7 +62,7 @@ class EstadoMissaoFragment : Fragment() {
             jsonRequest,
             { response ->
                 try {
-                    val estados = parseEstados(response.toString())
+                    val estados = parseEstados(fromHtml(response.toString()).toString())
 
                     // atualização de dados
                     estadosList.clear()
