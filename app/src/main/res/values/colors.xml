@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- MODO CLARO -->
     <color name="light_background">#e5d6c0</color>
     <color name="light_primary">#ffffff</color>
     <color name="light_secondary">#e7e7e7</color>
@@ -22,4 +23,25 @@
     <color name="light_warning_accent">#fae8be</color>
     <color name="light_danger">#d31313</color>
     <color name="light_danger_accent">#f3bcbc</color>
+
+    <!-- MODO ESCURO -->
+    <color name="dark_background">#342c20</color>
+    <color name="dark_primary">#030303</color>
+    <color name="dark_secondary">#181818</color>
+
+    <color name="dark_text">#f8f9f6</color>
+    <color name="dark_text_low">#cececd</color>
+
+    <color name="dark_main_1">#2093e5</color>
+    <color name="dark_main_2">#0f3057</color>
+    <color name="dark_main_3">#071936</color>
+
+    <color name="dark_success">#26ab23</color>
+    <color name="dark_success_accent">#072f0c</color>
+    <color name="dark_info">#2093e5</color>
+    <color name="dark_info_accent">#cfddf5</color>
+    <color name="dark_warning">#d2940e</color>
+    <color name="dark_warning_accent">#36290a</color>
+    <color name="dark_danger">#d31313</color>
+    <color name="dark_danger_accent">#2d0808</color>
 </resources>

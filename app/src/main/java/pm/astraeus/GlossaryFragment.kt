@@ -31,9 +31,9 @@ class GlossaryFragment : Fragment() {
         // População do TabLayout
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             when (position) {
-                0 -> tab.text = "Tipo de Missão"
-                1 -> tab.text = "Tipo de Corpo Celeste"
-                2 -> tab.text = "Estado de Missão"
+                0 -> tab.text = getString(R.string.mission_type)
+                1 -> tab.text = getString(R.string.object_type)
+                2 -> tab.text = getString(R.string.mission_status)
             }
         }.attach()
     }

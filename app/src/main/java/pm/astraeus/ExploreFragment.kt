@@ -35,7 +35,7 @@ class ExploreFragment : Fragment() {
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
         adapter = ProgramaAdapter(programasList) { programa ->
-            openDetalhesPrograma(programa.id) // Pass id as Integer
+            openDetalhesPrograma(programa.id)
         }
         recyclerView.adapter = adapter
 
@@ -109,7 +109,7 @@ class ExploreFragment : Fragment() {
         val detalhesPrograma = DetalhesProgramaFragment()
 
         val args = Bundle()
-        args.putInt("ID_PROGRAMA", id)  // Pass id as Integer
+        args.putInt("ID_PROGRAMA", id)
         detalhesPrograma.arguments = args
 
         parentFragmentManager.beginTransaction()

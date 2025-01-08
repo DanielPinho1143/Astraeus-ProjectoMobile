@@ -35,23 +35,21 @@ class LoginActivity : AppCompatActivity() {
             return
         }
 
-        // Create the API service
+        // Serviço API
         val userApi = RetrofitClient.createService(UserApi::class.java)
 
-        // Create the login request data
+        // Dados do login
         val loginRequest = LoginRequest(email, password)
 
-        // Make the login request using Retrofit
+        // Pedido de login
         userApi.login(loginRequest).enqueue(object : Callback<LoginResponse> {
             override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                 if (response.isSuccessful && response.body() != null) {
                     val loginResponse = response.body()!!
 
                     if (!loginResponse.jwt.isNullOrEmpty()) {
-                        // Save JWT or proceed with other operations
                         Toast.makeText(this@LoginActivity, "Login successful!", Toast.LENGTH_SHORT).show()
 
-                        // Optionally, save the user and JWT to SharedPreferences
                         if (binding.checkGuardar.isChecked) {
                             getSharedPreferences("pmLogin", Context.MODE_PRIVATE)
                                 .edit()
@@ -72,7 +70,6 @@ class LoginActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-                // Handle failure (e.g., no network)
                 Toast.makeText(this@LoginActivity, "Error: ${t.localizedMessage}", Toast.LENGTH_SHORT).show()
             }
         })

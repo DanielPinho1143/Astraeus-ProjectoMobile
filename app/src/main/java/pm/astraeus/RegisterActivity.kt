@@ -1,22 +1,14 @@
 package pm.astraeus
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import pm.astraeus.databinding.ActivityRegisterBinding
-import pm.astraeus.interfaces.LoginRequest
-import pm.astraeus.interfaces.LoginResponse
 import pm.astraeus.interfaces.RegisterApi
 import pm.astraeus.interfaces.RegisterRequest
 import pm.astraeus.interfaces.RegisterResponse
-import pm.astraeus.interfaces.UserApi
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

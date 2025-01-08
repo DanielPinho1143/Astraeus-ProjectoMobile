@@ -16,6 +16,9 @@
     <string name="theme_switch">Switch Theme</string>
     <string name="btn_no_account">Don\'t have an account? Register one.</string>
     <string name="user">Username</string>
-    <string name="register">Registar</string>
-    <string name="btn_have_account">Already have an account? Login here.</string>\
+    <string name="register">Register</string>
+    <string name="btn_have_account">Already have an account? Login here.</string>
+    <string name="mission_type">Mission Type</string>
+    <string name="object_type">Object Type</string>
+    <string name="mission_status">Status</string>
 </resources>

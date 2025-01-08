@@ -10,7 +10,7 @@
         android:id="@+id/imgCorpo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
         tools:src="@tools:sample/avatars" />
 
     <TextView
@@ -19,7 +19,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:gravity="center"
-        android:text="Corpo Name"
-        android:textSize="12sp"
-        tools:text="Mercúrio" />
+        android:text="Corpo"
+        android:textSize="12sp" />
 </LinearLayout>

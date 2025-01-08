@@ -10,4 +10,12 @@
     <string name="celestial_bodies">Corpos Celestiais</string>
     <string name="agencies">Agências</string>
     <string name="programs">Programas</string>
+    <string name="theme_switch">Trocar Tema</string>
+    <string name="btn_no_account">Não tens conta? Cria uma.</string>
+    <string name="user">Utilizador</string>
+    <string name="register">Registar</string>
+    <string name="btn_have_account">Já tem conta? Dê login.</string>
+    <string name="mission_type">Missão</string>
+    <string name="object_type">Corpo</string>
+    <string name="mission_status">Estado</string>
 </resources>

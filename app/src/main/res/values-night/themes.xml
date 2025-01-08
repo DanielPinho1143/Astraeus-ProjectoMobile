@@ -2,6 +2,68 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Astraeus" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:colorBackground">@color/dark_background</item>
+
+        <item name="colorPrimary">@color/dark_main_1</item>
+        <item name="colorPrimaryVariant">@color/dark_main_2</item>
+        <item name="colorOnPrimary">@color/dark_secondary</item>
+
+        <item name="colorSecondary">@color/dark_main_1</item>
+        <item name="colorSecondaryVariant">@color/dark_main_2</item>
+        <item name="colorOnSecondary">@color/dark_secondary</item>
+
+        <item name="colorSurface">@color/dark_primary</item>
+        <item name="colorOnSurface">@color/dark_main_1</item>
+
+        <item name="colorError">@color/dark_danger_accent</item>
+        <item name="colorOnError">@color/dark_danger</item>
     </style>
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorSurface">@color/dark_primary</item>
+
+        <item name="colorSecondaryContainer">@color/dark_main_3</item>
+        <item name="colorOnSecondaryContainer">@color/dark_text</item>
+        <item name="colorOnSurface">@color/dark_text</item>
+
+        <item name="colorOnSurfaceVariant">@color/dark_text_low</item>
+    </style>
+
+    <style name="ShapeAppearance.CornerCut" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">0dp</item>
+        <item name="cornerSizeBottomRight">10dp</item>
+    </style>
+
+    <style name="BtnError" parent="Widget.Material3.Button">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.CornerCut</item>
+        <item name="backgroundTint">@color/dark_danger</item>
+        <item name="android:textColor">@color/dark_primary</item>
+    </style>
+
+    <style name="BtnInfo">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.CornerCut</item>
+        <item name="backgroundTint">@color/dark_main_1</item>
+        <item name="android:textColor">@color/dark_primary</item>
+    </style>
+
+    <style name="BtnNoBox">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.CornerCut</item>
+        <item name="backgroundTint">@color/dark_secondary</item>
+        <item name="android:textColor">@color/dark_main_1</item>
+    </style>
+
+    <style name="CardViewStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardElevation">5dp</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+
 </resources>
