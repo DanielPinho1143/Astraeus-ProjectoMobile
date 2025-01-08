@@ -9,5 +9,13 @@
     <string name="password" translatable="false">Password</string>
     <string name="login">Login</string>
     <string name="save">Save</string>
-    <string name="logout">Logout</string>\
+    <string name="logout">Logout</string>
+    <string name="celestial_bodies">Celestial Bodies</string>
+    <string name="agencies">Agencies</string>
+    <string name="programs">Programs</string>
+    <string name="theme_switch">Switch Theme</string>
+    <string name="btn_no_account">Don\'t have an account? Register one.</string>
+    <string name="user">Username</string>
+    <string name="register">Registar</string>
+    <string name="btn_have_account">Already have an account? Login here.</string>\
 </resources>

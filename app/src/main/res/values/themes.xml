@@ -2,8 +2,35 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Astraeus" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorPrimary">@color/main_light</item>
+        <item name="android:colorBackground">@color/light_background</item>
+
+        <item name="colorPrimary">@color/light_main_1</item>
+        <item name="colorPrimaryVariant">@color/light_main_2</item>
+        <item name="colorOnPrimary">@color/light_secondary</item>
+
+        <item name="colorSecondary">@color/light_main_1</item>
+        <item name="colorSecondaryVariant">@color/light_main_2</item>
+        <item name="colorOnSecondary">@color/light_secondary</item>
+
+        <item name="colorSurface">@color/light_secondary</item>
+        <item name="colorOnSurface">@color/light_main_1</item>
+
+        <item name="colorError">@color/light_danger_accent</item>
+        <item name="colorOnError">@color/light_danger</item>
+    </style>
+    
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+    
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorSurface">@color/light_primary</item>
+
+        <item name="colorSecondaryContainer">@color/light_main_3</item>
+        <item name="colorOnSecondaryContainer">@color/light_text</item>
+        <item name="colorOnSurface">@color/light_text</item>
+
+        <item name="colorOnSurfaceVariant">@color/light_text_low</item>
     </style>
 
     <style name="Theme.Astraeus" parent="Base.Theme.Astraeus" />

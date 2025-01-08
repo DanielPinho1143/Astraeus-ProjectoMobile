@@ -7,4 +7,7 @@
     <string name="login">Entrar</string>
     <string name="save">Guardar</string>
     <string name="logout">Sair</string>
+    <string name="celestial_bodies">Corpos Celestiais</string>
+    <string name="agencies">Agências</string>
+    <string name="programs">Programas</string>
 </resources>

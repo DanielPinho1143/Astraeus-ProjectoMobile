@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardMissao"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Mission Details -->
+        <TextView
+            android:id="@+id/txtMissaoNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mission Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="Programa 123" />
+
+        <TextView
+            android:id="@+id/txtTipoMissaoNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Type of Mission"
+            android:textSize="14sp"
+            tools:text="Exploração" />
+
+        <TextView
+            android:id="@+id/txtEstadoNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Mission State"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:text="Futura" />
+
+        <TextView
+            android:id="@+id/txtMissaoDescricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Mission Description"
+            android:textSize="14sp"
+            tools:text="Esta missão nunca esteve ativa, mas futuramente estará." />
+
+        <TextView
+            android:id="@+id/txtMissaoResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Mission Description"
+            android:textSize="14sp"
+            tools:text="Esta missão nunca esteve ativa, mas futuramente estará." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtInicio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Start Date"
+                android:textSize="14sp"
+                tools:text="1999-04-30" />
+
+            <TextView
+                android:id="@+id/txtFim"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="End Date"
+                android:textSize="14sp"
+                tools:text="2008-12-10" />
+        </LinearLayout>
+
+        <!-- Corpo List -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:scrollbars="none">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerCorpo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                tools:listitem="@layout/item_missao_has_corpo" />
+        </HorizontalScrollView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

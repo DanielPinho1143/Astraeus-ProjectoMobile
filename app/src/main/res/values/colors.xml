@@ -3,9 +3,23 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="background_light">#e5d6c0</color>
+    <color name="light_background">#e5d6c0</color>
+    <color name="light_primary">#ffffff</color>
+    <color name="light_secondary">#e7e7e7</color>
 
-    <color name="primary_light">#ffffff</color>
+    <color name="light_text">#0f0f0f</color>
+    <color name="light_text_low">#4D4D4D</color>
 
-    <color name="main_light">#2093e5</color>
+    <color name="light_main_1">#2093e5</color>
+    <color name="light_main_2">#76a9e9</color>
+    <color name="light_main_3">#cfddf5</color>
+
+    <color name="light_success">#29a027</color>
+    <color name="light_success_accent">#bff3c6</color>
+    <color name="light_info">#2093e5</color>
+    <color name="light_info_accent">#cfddf5</color>
+    <color name="light_warning">#b98514</color>
+    <color name="light_warning_accent">#fae8be</color>
+    <color name="light_danger">#d31313</color>
+    <color name="light_danger_accent">#f3bcbc</color>
 </resources>

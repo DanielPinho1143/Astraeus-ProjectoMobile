@@ -33,12 +33,12 @@
             app:srcCompat="@drawable/logotipo_claro" />
 
         <EditText
-            android:id="@+id/txtEmail"
+            android:id="@+id/txtRegisterUser"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="64dp"
             android:ems="10"
-            android:hint="@string/email"
+            android:hint="@string/user"
             android:inputType="textEmailAddress"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -46,46 +46,49 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <EditText
-            android:id="@+id/txtPassword"
+            android:id="@+id/txtRegisterEmail"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtRegisterUser" />
+
+        <EditText
+            android:id="@+id/txtResgisterPassword"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+            app:layout_constraintTop_toBottomOf="@+id/txtRegisterEmail" />
 
         <Button
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnRegister"
             android:layout_width="230dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:onClick="doLogin"
-            android:text="@string/login"
+            android:onClick="doRegister"
+            android:text="@string/register"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
-
-        <CheckBox
-            android:id="@+id/checkGuardar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/save"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+            app:layout_constraintTop_toBottomOf="@+id/txtResgisterPassword" />
 
         <Button
-            android:id="@+id/btnToRegister"
+            android:id="@+id/btnToLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:onClick="goToRegister"
-            android:text="@string/btn_no_account"
+            android:onClick="goToLogin"
+            android:text="@string/btn_have_account"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />

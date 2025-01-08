@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
 import pm.astraeus.databinding.ActivityLoginBinding
 import pm.astraeus.interfaces.LoginRequest
 import pm.astraeus.interfaces.LoginResponse
@@ -75,5 +76,10 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this@LoginActivity, "Error: ${t.localizedMessage}", Toast.LENGTH_SHORT).show()
             }
         })
+    }
+
+    fun goToRegister(view: View) {
+        val intent = Intent(this, RegisterActivity::class.java)
+        startActivity(intent)
     }
 }
